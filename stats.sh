@@ -12,7 +12,7 @@ connections=$( netstat | grep tcp )
 #who is logged in
 users=$( who )
 
-echo -en "\e[94m This is a snapshot of your current system:
+echo -en "\e[94m This is a snapshot of your \e[5m current system:
 
                 \e[92m Disk Used: $diskused
                 
