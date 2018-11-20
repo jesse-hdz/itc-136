@@ -12,15 +12,15 @@ connections=$( netstat | grep tcp )
 #who is logged in
 users=$( who )
 
-echo -e "\e[94mThis is a snapshot of your current system:
+echo -en "\e[94mThis is a snapshot of your current system:
 
-                Disk Used: $diskused
+                \e[92mDisk Used: $diskused
                 
-                Free Memory: $freemem
+                \e[92mFree Memory: $freemem
                 
-                Logged In Users: $users
+                \e[92mLogged In Users: $users
                 
-Open Internet Connections:
+\e[104mOpen Internet Connections:
 $connections
 "
 
