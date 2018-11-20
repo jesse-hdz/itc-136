@@ -12,15 +12,15 @@ connections=$( netstat | grep tcp )
 #who is logged in
 users=$( who )
 
-echo -en "\e[94mThis is a snapshot of your current system:
+echo -en "\e[94m This is a snapshot of your current system:
 
-                \e[92mDisk Used: $diskused
+                \e[92m Disk Used: $diskused
                 
-                \e[92mFree Memory: $freemem
+                \e[92m Free Memory: $freemem
                 
-                \e[92mLogged In Users: $users
+                \e[92m Logged In Users: $users
                 
-\e[104mOpen Internet Connections:
+\e[104m Open Internet Connections:
 $connections
 "
 
@@ -29,4 +29,5 @@ color info:
 http://misc.flogisoft.com/bash/tip_colors_formatting
 http://wiki.bash-hackers.org/scripting/style
 https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles
+\e[39m
 "
