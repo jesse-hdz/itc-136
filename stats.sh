@@ -24,7 +24,7 @@ echo -en "\e[94m This is a snapshot of your current system:
 $connections
 "
 
-echo " 
+echo -en" 
 color info:
 http://misc.flogisoft.com/bash/tip_colors_formatting
 http://wiki.bash-hackers.org/scripting/style
