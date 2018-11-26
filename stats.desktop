@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=0.1
+Name=Stats
+Comment=ITC 136 Icon
+Exec=/usr/bin/gnome-terminal -e "bash -c '/usr/local/bin/stats; bash'"
+Icon=/home/jesseh/Desktop/vinyl.jpeg
+Terminal=false
+Type=Application
+Categories=Utility;Application;
