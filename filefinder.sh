@@ -6,11 +6,23 @@ read fname
 #find the file
 filefound=$( readlink -f $fname )
 
+#locate the file
+
+
+#whereis the file
+
+
+#executable?
+executablefile=$ ( awk '{ if ($fname == 8) { print } }' $fname | head )
+
 #printf "\n Please enter the path to check "
 #read path2check
 
 
-echo -en "\e[94m Your File is here: $filefound"
+echo -en "\e[94m Your File: $executablefile
+                 Found: $filefound
+
+"
 
 
 #if find $path2check -name $fname -print -quit |
