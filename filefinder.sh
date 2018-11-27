@@ -13,7 +13,7 @@ filefound=$( readlink -f $fname )
 
 
 #executable?
-executablefile=$ ( awk '{ if ($fname == 8) { print } }' $fname | head )
+executablefile=$ ( awk '{ if ($fname == 8) { print } }' | head )
 
 #printf "\n Please enter the path to check "
 #read path2check
