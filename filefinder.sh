@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "\n Please enter a file name "
+printf "\n Please enter a file name: "
 read fname
 
 #find the file
@@ -20,7 +20,7 @@ executablefile=$( ls -l $fname )
 
 
 echo -en "\e[94m Your File: $executablefile
-                 Found: $filefound
+Found: $filefound
 
 "
 
