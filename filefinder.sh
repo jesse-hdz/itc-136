@@ -10,8 +10,7 @@ filefound=$( readlink -f $fname )
 filelocated=$( locate *$fname* )
 
 #whereis the file
-
-
+filewhereis=$( whereis $fname )
 
 #executable?
 executablefile=$( ls -l $fname )
@@ -25,11 +24,3 @@ echo -en "\e[94m Your File: $executablefile
  Location: $filelocated
  Whereis: $filewhereis
 "
-
-
-#if find $path2check -name $fname -print -quit |
-   #grep -q '^'; then
-  #echo "the file exists!"
-#else
-  #echo "the file does not exist!"
-#fi
