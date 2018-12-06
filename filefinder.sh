@@ -14,7 +14,7 @@ filelocated=$( locate $fname )
 filewhereis=$( whereis $fname )
 
 #which (executable file) ------------------------------------------------
-filewhich=$( which -a $fname )
+filewhich=$( which -f $fname )
 
 #executable?
 #fileexecutable=$( -x "$fname" )
