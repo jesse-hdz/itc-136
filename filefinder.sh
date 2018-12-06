@@ -7,6 +7,18 @@
 printf "\n Please enter a file name to locate: "
 read fname
 
+#locate the file --------------------------------------------------------
+filelocated=$( locate $fname )
+
+#whereis the file -------------------------------------------------------
+filewhereis=$( whereis $fname )
+
+#which (executable file) ------------------------------------------------
+filewhich=$( which -a $fname )
+
+#executable?
+#fileexecutable=$( -x "$fname" )
+
 #find the file ----------------------------------------------------------
 #[ ! -f "$fname" ]
 #filefound=$( find . -name $fname )
@@ -27,20 +39,9 @@ else
     echo "$0: File '${fname}' not found."
 fi
 
-#locate the file --------------------------------------------------------
-filelocated=$( locate $fname )
 
-#whereis the file -------------------------------------------------------
-filewhereis=$( whereis $fname )
-
-#which (executable file) ------------------------------------------------
-filewhich=$( which -a $fname )
-
-#executable?
-#fileexecutable=$( -x "$fname" )
-
-echo -en "\e[94m Your File: $executablefile
- Found: $filefound
- Location: $filelocated
- Whereis: $filewhereis
-"
+#echo -en "\e[94m Your File: $executablefile
+ #Found: $filefound
+ #Location: $filelocated
+ #Whereis: $filewhereis
+#"
