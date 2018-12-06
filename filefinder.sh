@@ -13,7 +13,7 @@ read fname
 #filefound=$( readlink -f $fname )
 
 #finds files regardless of case "-iname"
-if [[ find / -iname "$fname" ]] 
+if [[ find . -iname "$fname" ]] 
 then
     echo "$0: File '${fname}' is located at: $filelocated"
     echo "$0: '${fname}' is : $filewhereis"
