@@ -27,8 +27,8 @@ filewhich=$( which -a $fname )
 #finds files regardless of case "-iname"
 if find . -iname '$fname'  
 then
-    echo -e "\e[44m     File '${fname}' is located at: ${filelocated} \e[0m"
-    echo -e "\e[45m     '${fname}' is : ${filewhereis} "
+    echo -e "\e[44m     File '${fname}' is located at: \e[34m ${filelocated} \e[0m"
+    echo -e "\e[45m     '${fname}' is : \e[34m ${filewhereis} "
          if which -a "$fname"  #$filewhich
          then
              echo -e "\e[42m     File '${fname}' is executable."
