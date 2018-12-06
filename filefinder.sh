@@ -27,7 +27,7 @@ filewhich=$( which -a $fname )
 #finds files regardless of case "-iname"
 if find . -iname '$fname'  
 then
-    echo "     File ${fname} is located at: $filelocated"
+    echo "     File ${fname} is located at: ${filelocated}"
     echo "     ${fname} is : $filewhereis"
          if which -a "$fname"  #$filewhich
          then
