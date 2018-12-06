@@ -27,16 +27,16 @@ filewhich=$( which -a $fname )
 #finds files regardless of case "-iname"
 if find . -iname '$fname'  
 then
-    echo "$0: File '${fname}' is located at: $filelocated"
-    echo "$0: '${fname}' is : $filewhereis"
-         if -x "$fname"  #$filewhich
+    echo "     File ${fname} is located at: $filelocated"
+    echo "     ${fname} is : $filewhereis"
+         if which -a "$fname"  #$filewhich
          then
-             echo "$0: File '$fname' is executable."
+             echo "     File '${fname}' is executable."
          else
-             echo "$0: File '$fname' is not executable or found."
+             echo "     File '$fname' is not executable or found."
          fi
 else
-    echo "$0: File '${fname}' not found."
+    echo "File '${fname}' not found."
 fi
 
 
