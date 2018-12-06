@@ -39,9 +39,3 @@ else
     echo -e "\e[41m     File '${fname}' not found. \e[0m"
 fi
 
-
-#echo -en "\e[94m Your File: $executablefile
- #Found: $filefound
- #Location: $filelocated
- #Whereis: $filewhereis
-#"
